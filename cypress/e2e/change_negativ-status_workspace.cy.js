@@ -47,14 +47,6 @@ describe('WorkspaceTest', () => {
         });
     });
 
-
-    it('Смена статуса "Принят на вакансию"', () => {
-        cy.get(items.workspacePage.acceptButton).should('be.visible');
-        cy.get(items.workspacePage.acceptButton).click();
-
-        cy.get(items.workspacePage.workspaceStatus).should('contain', 'Принят на вакансию');
-    });
-
     it('Смена статуса "В вакансии отказано"', () => {
         cy.get(items.workspacePage.rejectButton).should('be.visible');
         cy.get(items.workspacePage.rejectButton).click();

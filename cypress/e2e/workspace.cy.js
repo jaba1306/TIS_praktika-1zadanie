@@ -70,5 +70,4 @@ describe('WorkspaceTest', () => {
         cy.get(items.workspacePage.copyButton).should('be.visible');
         cy.get(items.workspacePage.copyButton).click({multiple: true });
     });
-
 });
